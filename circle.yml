@@ -5,10 +5,10 @@ machine:
 dependencies:
   pre:
     # Circle uses npm v2 by default
-    - npm install -g npm@latest
+    #- npm install -g npm@latest
 
     # Install Angular cli
-    - npm install -g angular-cli@latest
+    #- npm install -g angular-cli@latest
 
 general:
   branches:
