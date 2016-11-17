@@ -1,0 +1,27 @@
+ine:
+  node:
+    version: 6.9.1
+
+dependencies:
+  pre:
+    # Circle uses npm v2 by default
+    - npm install -g npm@latest
+
+    # Install Angular cli
+    - npm install -g angular-cli@latest
+
+general:
+  branches:
+    only:
+      - master
+
+test:
+  override:
+    - echo "No tests for now"
+
+deployment:
+  prod:
+    branch: master
+    commands:
+      - ./deployS3.sh
+
