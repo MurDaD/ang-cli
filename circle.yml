@@ -9,6 +9,8 @@ dependencies:
 
     # Install Angular cli
     #- npm install -g angular-cli@latest
+  override:
+    - npm install --prod
 
 general:
   branches:
